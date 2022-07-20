@@ -2,13 +2,34 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Caesar Cipher</title>
+    <title>Cifra de César</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <div id="root">
-      <h1>Hello world!</h1>
+      <h1>Cifra de César </h1>
     </div>
+    <div>
+      <h2>Instruções: Escrever aqui as instruções </h2>
+    </div>
+    <div> 
+      <h3>Escreva a sua mensagem aqui:</h3>
+      <p><input type="text" id="mensagem"></p> 
+    </div>
+    <div>
+      <h3>Número de deslocamento (offset)</h3>
+      <p><input type="number" id="offset"></p>
+    </div>
+
+    <div> 
+      <button class="encode" id ="encode">Cifrar </button>
+      <button class="decode" id="decode"> Decifrar</button></div>
+    <div> 
+      <h3>Mensagem cifrada/decifrada:
+      <p><output id="result"></p> 
+    </div>
+
+
     <script src="index.js" type="module"></script>
   </body>
 </html>
