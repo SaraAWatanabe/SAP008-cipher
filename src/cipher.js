@@ -9,7 +9,7 @@ const cipher = {
   let mensagemCifrada = String.fromCharCode (cifragem)
   console.log (mensagemCifrada)// o resultado é a mensagem criptografada
   const output = document.getElementById("result")
-    output.write (mensagemCifrada) //Tá certo????
+    output. (mensagemCifrada) //Tá certo????
   } ,
   //decode: function 
 
