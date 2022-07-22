@@ -6,12 +6,15 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header>
     <div id="root">
       <h1>Cifra de César </h1>
     </div>
     <div>
       <h2>Instruções: Escrever aqui as instruções </h2>
     </div>
+    </header>
+    <main> 
     <div> 
       <h3>Escreva a sua mensagem aqui:</h3>
       <p><input type="text" id="mensagem"></p> 
@@ -25,11 +28,16 @@
       <button class="encode" id ="encode">Cifrar </button>
       <button class="decode" id="decode"> Decifrar</button></div>
     <div id ="resultCifra"> 
-      <h3>Mensagem cifrada/decifrada:
-      <p><output id="result"></p> 
+      <h3>Mensagem cifrada/decifrada:</h3>
+      <p><output type = "text" id="result"></p> 
     </div>
-
-
+    </main>
+    <footer> 
+      
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
+  
+
+ 
 </html>
