@@ -1,40 +1,59 @@
 body{ 
-    text-align:center;
-    font-family:Open Sans, sans-serif;
-    background-color: #c99b71;
-    color:#ffffff;
-    margin: 0px 0px 30px 0px;
-  }
+  text-align:center;
+  font-family:Open Sans, sans-serif;
+  background-color: #c99b71;
+  color:#ffffff;
+  margin: 0px 0px 30px 0px;
+}
 
-  .encode {
-    border-color: black;
-    padding: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: #022D41;
-    transition: background.3s;
-    border-radius: 5px;
-  }
+main{
+width: 60;
+}
 
-  .decode {
-    border-color: black;
-    padding: 10px;
-    text-decoration: none;
-    cursor: pointer;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 500;
-    font-size: 1.4rem;
-    color: #022D41;
-    transition: background.3s;
-    border-radius: 5px;
-    
-    
-  }
+h2{
+  font-size: 20px;
+  font-weight: 400;
+  color:#ffffff;
+}
+
+h3{
+  font-size: 15px;
+  font-weight: 300;
+  color: bold;
+}
+
+.encode {
+  border-color: black;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #022D41;
+  transition: background.3s;
+  border-radius: 50%;
+  width: 100px;
+}
+
+.decode {
+  border-color: black;
+  padding: 10px;
+  text-decoration: none;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 1.4rem;
+  color: #022D41;
+  transition: background.3s;
+  border-radius: 50%;
+  width: 100px;
   
-  button:hover {
-    color: red;
-     ;
-  }
+  
+}
+
+button:hover {
+  color: brown;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+   ;
+}

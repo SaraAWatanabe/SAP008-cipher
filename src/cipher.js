@@ -1,33 +1,49 @@
 const cipher = {
   encode: function (offset, mensagem) {
-    
+
     let mensagemCifrada = ""
-    for (var i = 0, l=mensagem.length; i<l; i++){ // Como rodar todas as letras da mensagem? 
-      let cifragem = ((mensagem.charCodeAt(i) - 65 + offset) % 26 + 65) 
-     console.log (cifragem)
 
-       mensagemCifrada += String.fromCharCode (cifragem)
-     console.log (mensagemCifrada)// o resultado é a mensagem criptografada
-  
-      // Como juntar todas as letras da string?
+    for (var i = 0, l = mensagem.length; i < l; i++) {
+      let cifragem = " "
+      let letraAtual = mensagem.charCodeAt(i)
+      if (letraAtual >= "a".charCodeAt() && letraAtual <= "z".charCodeAt()) {
+        cifragem = ((letraAtual - "a".charCodeAt() + offset) % 26 + "a".charCodeAt())
+      }
+      else if (letraAtual >= "A".charCodeAt() && letraAtual <= "Z".charCodeAt()) {
+        cifragem = ((letraAtual - "A".charCodeAt() + offset) % 26 + "A".charCodeAt())
+      }
+      else {
+        alert("Você deve usar somente letras maiúscula e/ou minúsculas, sem espaços ou caracteres especiais!")
+      }
+    
+      mensagemCifrada += String.fromCharCode(cifragem)
     }
+
     return mensagemCifrada
-    
 
-    //const output = document.getElementById("result") //colocar no index?
-    
-  } ,
-  //decode: function (offset, mensagem) {
-  
-  //let decifragem = ((mensagem.charCodeAt(i) - 65 - offset) % 26 + 65) 
-    //for (var i = 0, l=mensagem.length; i<l; i++) // Como rodar todas as letras da mensagem? Definir escopo do laço?
-     //console.log (decifragem)
+  },
 
-    //let mensagemDecifrada = String.fromCharCode (cifragem)
-    // console.log (mensagemdeCifrada)// o resultado é a mensagem descriptografada
-    
-  //}
+  decode: function (offset, mensagem) {
 
+    let mensagemDecifrada = ""
+
+    for (var i = 0, l = mensagem.length; i < l; i++) {
+      let decifragem = " "
+      let letraAtual = mensagem.charCodeAt(i)
+      if (letraAtual >= "a".charCodeAt() && letraAtual <= "z".charCodeAt()) {
+        decifragem = ((letraAtual - "z".charCodeAt() - offset) % 26 + "z".charCodeAt())
+      }
+      else if (letraAtual >= "A".charCodeAt() && letraAtual <= "Z".charCodeAt()) {
+        decifragem = ((letraAtual - "Z".charCodeAt() - offset) % 26 + "Z".charCodeAt())
+      }
+      else {
+        alert("Você deve usar somente letras maiúscula e/ou minúsculas, sem espaços ou caracteres especiais!")
+      }
+      mensagemDecifrada += String.fromCharCode(decifragem)
+    }
+    return mensagemDecifrada
+
+  }
 }
 
 export default cipher
