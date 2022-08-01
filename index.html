@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="Space-invader.ico" type="image/x-icon">
+  <title>Cifra de Sara</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <div id="root">
+      <h1>👾------------------------ Cifra de César ------------------------👾 </h1>
+    </div>
+  </header>
+  <hr>
+  <main>
+    <section>
+      <h2> O que é?</h2>
+      <article>
+        <p> É uma ferramenta nomeada em homenagem a Júlio César,
+          capaz de criptografar e descriptografar palavras e/ou mensagens. </p>
+      </article>
+      <h2>Como funciona? </h2>
+      <article>
+        <p>A Cifra de César funciona por meio da substituição de cada letra por outra que
+          se encontra em uma determinada posição no alfabeto. Desse modo, cada letra será
+          deslocada um número fixo de vezes, formando uma cifra. Para decifrar, escreva a
+          mensagem cifrada e escolha o número de deslocamento utilizado anteriormente.
+          Siga as instruções para cifrar/decifrar sua mensagem:</p>
+        <ol>
+          <li>Escreva sua mensagem. </li>
+          <li>Escolha o número de deslocamento.</li>
+          <li>Clique em cifrar/decifrar e veja sua mensagem cifrada/decifrada.</li>
+        </ol>
+      </article>
+    </section>
+    <section>
+      <h3>Escreva a sua mensagem aqui:</h3>
+      <p><input class="input" type="text" id="mensagem" placeholder="Mensagem"></p>
+      <h3>Selecione o número de deslocamento:</h3>
+      <p><input class="input" type="number" id="offset" placeholder="0"></p>
+      <button class="btn" id="encode">Cifrar </button>
+      <button class="btn" id="decode"> Decifrar</button>
+      <div id="resultCifra">
+        <h3>Mensagem cifrada/decifrada:</h3>
+        <p><output type="text" id="result"></output></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <hr>
+    &copy; 2022 Sara A. Watanabe
+  </footer>
+  <script src="index.js" type="module"></script>
+</body>
+
+</html>
