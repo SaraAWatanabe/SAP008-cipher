@@ -4,11 +4,9 @@
 
 * [1. Prefácio](#1-prefácio)
 * [2. Resumo do projeto e Objetivos](#2-resumo-do-projeto)
-* [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
-* [4. Considerações gerais](#4-considerações-gerais)
-* [5. Critérios de aceitação mínimos do projeto](#5-critérios-de-aceitação-mínimos-do-projeto)
-* [6. Hacker edition](#6-hacker-edition)
-* [7. Considerações técnicas](#7-considerações-técnicas)
+* [3. Definição do produto](#3-definição-do-produto)
+* [4. Funcionalidades da interface](#4-funcionalidade-da-interface)
+* [5. Etapas de produção](#5-etapas-de-produção)
 
 ***
 
@@ -39,6 +37,7 @@ mas a cifra de César muitas vezes pode fazer parte de um sistema
 mais complexo de criptografia, como
 a cifra de Vigenère, e tem aplicação no sistema ROT13.
 
+
 ## 2. Resumo do projeto e Objetivos
 
 O objetivo desde projeto é criar uma aplicação web, na qual a pessoa usuária
@@ -64,39 +63,24 @@ O usuário tem como objetivo criptofrafar palavras e/ou mensagens importantes.
 O produto é capaz de criptografar palavras e/ou mensagens importantes.
 
 
-
 ## 4. Funcionalidades da interface
 
-De acordo com o protótipo abaixo, a interface deverá permitir ao usuário:
+A interface deverá permitir ao usuário:
 
 * Eleger um _offset_ indicando quantas posições de deslocamento de caracteres
-(alfabeto simples, com letras maiúsculas e minúsculas, sem o ç)quer que a 
+(letras maiúsculas e minúsculas, e alguns caracteres especiais)quer que a 
 cifra utilize.
 * Inserir uma mensagem (texto) para ser cifrada.
 * Ver o resultado da mensagem cifrada.
 * Inserir uma mensagem (texto) para ser decifrada.
 * Ver o resultado da mensagem decifrada.
 
-* COLOCAR PROTÓTIPO AQUI
-
 
 ## 5.  Etapas de produção e testes
 
-## 6. Deploy, instalação e execução
+O projeto foi desenvolvido ao longo de 3 sprints de trabalho, totalizando 
+aproximadamente 3 semanas. 
 
-Para começar esse projeto você terá que fazer um _fork_ e _clonar_ este
-repositório que contém o _boilerplate_.
 
-Para este projeto, utilizaremos o Github Pages para essa finalidade.
-O comando `npm run deploy` pode te auxiliar nessa tarefa e você pode também
-consultar a [documentação oficial](https://docs.github.com/pt/pages).
 
-* [ ] Passar o linter com a configuração definida.
-* [ ] Passar as provas unitárias.
-* [ ] Testes unitários cobrindo 70% dos _statements_, _functions_ e _lines_, e
-  no mínimo 50% das _branches_.
 
-### Parte Opcional: "Hacker edition"
-
-* [ ] Cifrar/decifrar _outros_ caractéres (espaços, pontuação, `ç`, `á`, ...).
-* [ ] Permitir usar `offset` negativo.

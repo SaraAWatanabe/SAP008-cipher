@@ -8,18 +8,25 @@ const btnDecode = document.getElementById("decode")
 const resultado = document.getElementById("result")
 
 btnEncode.addEventListener("click", function () {
-  console.log(mensagem.value)
-  console.log(offset.valueAsNumber)
-  const mensagemCifrada = cipher.encode(offset.valueAsNumber, mensagem.value)
-  resultado.value = mensagemCifrada
+  try {
+    const mensagemCifrada = cipher.encode(offset.valueAsNumber, mensagem.value)
+    resultado.value = mensagemCifrada
+  }
+  catch (error) {
+    alert(error.message)
+
+  }
 })
 
 btnDecode.addEventListener("click", function () {
-  console.log(mensagem.value)
-  console.log(offset.valueAsNumber)
-  cipher.decode(offset.valueAsNumber, mensagem.value)
-  const mensagemDecifrada = cipher.decode(offset.valueAsNumber, mensagem.value)
+  try{
+    const mensagemDecifrada = cipher.decode(offset.valueAsNumber, mensagem.value)
   resultado.value = mensagemDecifrada
+  }
+  catch (error) {
+    alert(error.message)
+  }
+  
 
 })
 
